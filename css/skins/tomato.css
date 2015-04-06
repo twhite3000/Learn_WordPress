@@ -20,4 +20,16 @@ p {
 .main_color_bg {
   background-color: #222; }
 
+svg path {
+  fill: #222; }
+
+.toggle_mnu {
+  background-color: #222; }
+
+.top_mnu a:hover {
+  color: #FF6347;
+  background-color: rgba(255, 255, 255, 0.08); }
+.top_mnu a {
+  letter-spacing: 3px; }
+
 /*# sourceMappingURL=tomato.css.map */
