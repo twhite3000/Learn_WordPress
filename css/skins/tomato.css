@@ -9,7 +9,8 @@ a {
   color: #FF6347; }
 
 p,
-body .main_footer {
+body .main_footer,
+.s_about li {
   color: #888; }
 
 .color_element {
@@ -61,5 +62,15 @@ svg path {
   letter-spacing: 5px; }
   .s_descr::after {
     background-color: #222; }
+
+section h3 {
+  letter-spacing: 2px;
+  color: #888; }
+
+.s_about p:nth-child(even) {
+  color: #FF6347; }
+
+.personal_header {
+  letter-spacing: 3px; }
 
 /*# sourceMappingURL=tomato.css.map */
