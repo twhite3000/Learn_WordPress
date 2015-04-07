@@ -23,9 +23,35 @@ section,
 .main_head
 	position: relative
 
+section
+	padding: 90px 0 90px
+	h2
+		text-align: center
+		font-size: 2em
+		text-transform: uppercase
+		margin: 0 0 15px
+
+.s_descr_wrap
+	text-align: center
+
+.s_descr
+	display: inline-block
+	font-size: 1em
+	text-transform: uppercase
+	position: relative
+	margin-bottom: 130px
+	&::after
+		content: ""
+		width: 150px
+		height: 1px
+		position: absolute
+		left: 50%
+		margin-left: -75px
+		margin-top: 60px
+
 .main_head
 	min-height: 620px
-	padding-top: 20px
+	padding-top: 3em
 
 .loader
 	background: none repeat scroll 0 0 #ffffff
@@ -183,7 +209,6 @@ $h: 3px
 			font-weight: 700
 			font-size: 4em
 			background-color: rgba(0,0,0,.3)
-			box-shadow: rgba(0,0,0,.1) 0 0 0 1000px
 			margin: 20px 20px
 			padding: 10px 1px 10px 14px
 
@@ -191,6 +216,12 @@ $h: 3px
 			font-size: 1.5em
 			margin: 0
 			text-transform: uppercase
+
 .h_opacify
 	opacity: 0.2
 	transition: (all .3s ease)
+
+.main_footer
+	padding: 50px 0
+	font-size: 0.9em
+	font-weight: 300

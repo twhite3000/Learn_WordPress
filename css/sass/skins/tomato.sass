@@ -18,7 +18,8 @@ button:focus
 a
 	color: $color
 
-p
+p,
+body .main_footer
 	color: $text_color
 
 .color_element
@@ -57,3 +58,16 @@ svg
 		+kerning(5)
 	h1
 		+kerning(10)
+.bg_light
+	background-color: $bg_light
+.bg_dark
+	background-color: $main_color
+	color: #fff
+	.s_descr::after
+		background-color: #FFF
+	a
+		color: #fff
+.s_descr
+	+kerning(5)
+	&::after
+		background-color: $main_color
