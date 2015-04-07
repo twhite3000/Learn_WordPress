@@ -12,6 +12,9 @@ body
 	color: $main_color
 	+kerning(1)
 
+button:focus
+	outline: none
+
 a
 	color: $color
 
@@ -32,7 +35,12 @@ p
 
 svg
 	path
-		fill: $main_color
+		fill: #fff
+
+.container
+	.toggle_mnu_active
+		background-color: transparent
+		transition: (all .3s ease)
 
 .toggle_mnu
 	background-color: $main_color
@@ -43,3 +51,9 @@ svg
 		background-color: rgba(255,255,255,.08)
 	a
 		+kerning(3)
+.top_text
+	p
+		color: $bg_light
+		+kerning(5)
+	h1
+		+kerning(10)

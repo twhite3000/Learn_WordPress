@@ -8,14 +8,16 @@ $(document).ready(function() {
 		heightDetect();
 	});
 
-	$(".toggle_mnu, .menu_item").click(function() {
+	$(".toggle_mnu").click(function() {
 		$(".sandwich").toggleClass("active");
 	});
 
-	$('.toggle_mnu').on('click', function(){
-		$('.top_mnu').fadeToggle(600);
-		$(".top_mnu li a").toggleClass("fadeInUp animated")
-	})
+	$(".toggle_mnu").on("click", function(){
+		$(".top_mnu").fadeToggle(550);
+		$(".top_mnu li").toggleClass("fadeInUp animated")
+		$(".top_text").toggleClass("h_opacify")
+		$(".toggle_mnu").toggleClass("container toggle_mnu_active")
+	});
 });
 $(window).load(function() { 
 	$(".loader_inner").fadeOut(); 

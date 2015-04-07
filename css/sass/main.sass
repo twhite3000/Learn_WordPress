@@ -64,8 +64,9 @@ svg
 .toggle_mnu
 	width: 60px
 	height: 60px
-	float: right
-	position: relative
+	position: fixed
+	right: 20px
+	top: 20px
 	z-index: 100
 	border: none
 	span
@@ -85,7 +86,6 @@ $h: 3px
 	right: 0
 	margin: auto
 	z-index: 200
-
 
 .sw-topper
 	position: relative
@@ -138,7 +138,7 @@ $h: 3px
 	position: fixed
 	width: 100%
 	height: 100%
-	background-color: rgba(0,0,0,.9)
+	background-color: rgba(0,0,0,.8)
 	z-index: 50
 	right: 0
 	top: 0
@@ -156,3 +156,41 @@ $h: 3px
 			display: block
 			padding: 20px 0
 			text-transform: uppercase
+			transition: background-color 0.5s
+
+.top_wrapper
+	display: table
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 10
+	.top_descr
+		display: table-row
+		.top_centered
+			display: table-cell
+			text-align: center
+			vertical-align: middle
+	.top_text
+		display: inline-block
+		h1
+			display: inline-block
+			padding: 10px 30px
+			color: #fff
+			border: 8px solid #fff
+			text-transform: uppercase
+			font-weight: 700
+			font-size: 4em
+			background-color: rgba(0,0,0,.3)
+			box-shadow: rgba(0,0,0,.1) 0 0 0 1000px
+			margin: 20px 20px
+			padding: 10px 1px 10px 14px
+
+		p
+			font-size: 1.5em
+			margin: 0
+			text-transform: uppercase
+.h_opacify
+	opacity: 0.2
+	transition: (all .3s ease)

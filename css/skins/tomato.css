@@ -2,6 +2,9 @@ body {
   color: #222;
   letter-spacing: 1px; }
 
+button:focus {
+  outline: none; }
+
 a {
   color: #FF6347; }
 
@@ -21,7 +24,11 @@ p {
   background-color: #222; }
 
 svg path {
-  fill: #222; }
+  fill: #fff; }
+
+.container .toggle_mnu_active {
+  background-color: transparent;
+  transition: all 0.3s ease; }
 
 .toggle_mnu {
   background-color: #222; }
@@ -31,5 +38,11 @@ svg path {
   background-color: rgba(255, 255, 255, 0.08); }
 .top_mnu a {
   letter-spacing: 3px; }
+
+.top_text p {
+  color: #FAFAFA;
+  letter-spacing: 5px; }
+.top_text h1 {
+  letter-spacing: 10px; }
 
 /*# sourceMappingURL=tomato.css.map */

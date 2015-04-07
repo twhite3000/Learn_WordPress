@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Raleway";
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   src: url("../fonts/RalewayRegular/RalewayRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RalewayRegular/RalewayRegular.woff") format("woff"), url("../fonts/RalewayRegular/RalewayRegular.ttf") format("truetype"); }
 @font-face {
   font-family: "Raleway";
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   src: url("../fonts/RalewayBold/RalewayBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RalewayBold/RalewayBold.woff") format("woff"), url("../fonts/RalewayBold/RalewayBold.ttf") format("truetype"); }
 @font-face {
   font-family: "Raleway";
