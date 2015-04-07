@@ -165,6 +165,26 @@ svg {
     list-style-type: none;
     padding: 0;
     margin: 0; }
+    .top_mnu ul:nth-child(1),
+    .top_mnu li:nth-child(1) {
+      -webkit-animation-duration: 0.1s;
+      -moz-animation-duration: 0.1s;
+      animation-duration: 0.1s; }
+    .top_mnu ul:nth-child(2),
+    .top_mnu li:nth-child(2) {
+      -webkit-animation-duration: 0.4s;
+      -moz-animation-duration: 0.4s;
+      animation-duration: 0.4s; }
+    .top_mnu ul:nth-child(3),
+    .top_mnu li:nth-child(3) {
+      -webkit-animation-duration: 0.8s;
+      -moz-animation-duration: 0.8s;
+      animation-duration: 0.8s; }
+    .top_mnu ul:nth-child(4),
+    .top_mnu li:nth-child(4) {
+      -webkit-animation-duration: 1.2s;
+      -moz-animation-duration: 1.2s;
+      animation-duration: 1.2s; }
   .top_mnu ul {
     margin-top: 120px;
     text-align: center; }
@@ -201,11 +221,17 @@ svg {
       font-size: 4em;
       background-color: rgba(0, 0, 0, 0.3);
       margin: 20px 20px;
-      padding: 10px 1px 10px 14px; }
+      padding: 10px 1px 10px 14px;
+      -webkit-animation-delay: 1s;
+      -moz-animation-delay: 1s;
+      animation-delay: 1s; }
     .top_wrapper .top_text p {
       font-size: 1.5em;
       margin: 0;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      -webkit-animation-delay: 1.5s;
+      -moz-animation-delay: 1.5s;
+      animation-delay: 1.5s; }
 
 .h_opacify {
   opacity: 0.2;
