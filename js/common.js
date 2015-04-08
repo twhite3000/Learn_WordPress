@@ -7,8 +7,10 @@ $(document).ready(function() {
 	$(".top_text p").animated("fadeInUp", "fadeOutDown");
 	$(".top_text p, .section_header").animated("fadeInUp", "fadeOutDown");
 	$(".animation_2").animated("fadeInLeft", "fadeOutLeft");
+	$(".left .resume_item").animated("fadeInLeft", "fadeOutLeft");
+	$(".right .resume_item").animated("fadeInRight", "fadeOutRight");
 	$(".animation_3").animated("fadeInRight", "fadeOutRight");
-	$(".animation_1").animated("flipInY", "flipOutY");
+	$(".animation_1").animated("flipInY", "fadeOutDown");
 
 	function heightDetect() {
 		$(".main_head").css("height", $(window).height());
