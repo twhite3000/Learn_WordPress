@@ -40,13 +40,21 @@ $(document).ready(function() {
 		$(".sandwich").toggleClass("active");
 	});
 
+	$(".top_mnu ul a").click(function() {
+		$(".top_mnu").fadeOut(600);
+		$(".sandwich").toggleClass("active");
+		$(".top_text").css("opacity", "1");
+		$(".toggle_mnu").toggleClass("container toggle_mnu_active")
+	}).append("<span>");
+
 	$(".toggle_mnu").on("click", function(){
 		$(".top_mnu").fadeToggle(550);
 		$(".top_mnu li").toggleClass("fadeInUp animated")
 		$(".top_text").toggleClass("h_opacify")
 		$(".toggle_mnu").toggleClass("container toggle_mnu_active")
 	});
-	$("input, select, textarea").not("[type=submit]").jqBootstrapValidation();
+	$("input, select, textarea").jqBootstrapValidation();
+	$(".top_mnu ul a").mPageScroll2id();
 });
 $(window).load(function() { 
 	$(".loader_inner").fadeOut(); 

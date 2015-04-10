@@ -38,10 +38,10 @@
 							</button>
 							<nav class="top_mnu">
 								<ul>
-									<li><a href="#">Обо мне</a></li>
-									<li><a href="#">Резюме</a></li>
-									<li><a href="#">Портфолио</a></li>
-									<li><a href="#">Контакты</a></li>
+									<li><a href="#about">Обо мне</a></li>
+									<li><a href="#resume">Резюме</a></li>
+									<li><a href="#portfolio">Портфолио</a></li>
+									<li><a href="#contacts">Контакты</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -354,10 +354,20 @@
 									</div>
 								</div>
 								<div class="col-md-6">
-									<form action="" class="main_form" novalidate>
-										<label>
-											<span class=".color_element">*</span>Ваше имя:
-											<input type="text" name="name" placeholder="Ваше имя" data-validation-message="Вы не ввели имя" required/>
+									<form action="//formspree.io/twhite3000@yandex.com" class="main_form" novalidate method="POST">
+										<label class="form-group">
+											<span class="color_element">*</span> Ваше имя:
+											<input type="text" name="name" placeholder="Ваше имя" data-validation-required-message="Вы не ввели имя" required />
+											<span class="help-block text-danger"></span>
+										</label>
+										<label class="form-group">
+											<span class="color_element">*</span> Ваш E-mail:
+											<input type="email" name="email" placeholder="Ваш E-mail" data-validation-required-message="Не корректно введен E-mail" required />
+											<span class="help-block text-danger"></span>
+										</label>
+										<label class="form-group">
+											<span class="color_element">*</span> Ваше сообщение:
+											<textarea name="message" placeholder="Ваше сообщение" data-validation-required-message="Вы не ввели сообщение" required></textarea>
 											<span class="help-block text-danger"></span>
 										</label>
 										<button>Отправить</button>
